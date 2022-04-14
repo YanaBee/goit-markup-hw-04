@@ -20,8 +20,6 @@ body {
 }
 
 .container {
-  /* margin-left: auto;
-    margin-right: auto; */
   margin: 0 auto;
   width: 1200px;
   padding: 0 15px;
@@ -54,6 +52,7 @@ body {
 .contact-list {
   display: flex;
   margin-left: auto;
+  justify-content: center;
 }
 
 .contact-list .item + .item {
@@ -119,6 +118,22 @@ body {
   color: var(--logo-accent);
 }
 
+.mail-icon {
+  display: inline-flex;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.phone-icon {
+  display: inline-flex;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -141,7 +156,7 @@ img {
 /* Hero */
 
 .container-hero {
-  background: var(--background-color-dark);
+  /* background: var(--background-color-dark); */
   margin-left: 0;
   margin-right: 0;
   text-align: center;
@@ -180,7 +195,21 @@ img {
 .hero {
   padding-top: 0;
   padding-bottom: 0;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../image/hero-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
 /* Advantages */
 .advantages {
   padding-bottom: 0;
@@ -194,8 +223,6 @@ img {
 .features-list .item {
   width: 270px;
   margin-right: 30px;
-  /* padding-top: 94px; */
-  /* padding-bottom: 94px; */
 }
 
 .features-list .item:nth-child(4n) {
@@ -241,6 +268,36 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.icons-advantages {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.icon-box {
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.icon-static {
+  width: 65.32px;
+  height: 70px;
+  justify-content: center;
+}
+
+.icon-box:nth-child(4n) {
+  margin-right: 0px;
 }
 
 /* Our works */
@@ -311,12 +368,86 @@ img {
   padding-bottom: 30px;
 }
 
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons:hover {
+  background-color: var(--logo-accent);
+  fill: var(--text-accent);
+  border-radius: 50%;
+}
+
+.social-icons {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  fill: #afb1b8;
+}
+
+.twitter,
+.facebook,
+.instagram,
+.linkedin {
+  width: 20px;
+  height: 20px;
+}
+
+/* Frequent customers */
+
+.customers-list {
+  display: flex;
+}
+
+.clients {
+  display: flex;
+  width: 106px;
+  height: 60px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  margin: 16px 32px;
+}
+
+.clients-logo {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+
+.clients-logo:nth-child(6n) {
+  margin-right: 0;
+}
+
+.clients:hover {
+  fill: var(--logo-accent);
+}
+
+.clients-logo:hover {
+  border-color: var(--logo-accent);
+}
+
 /* Footer */
+
+.footer-contacts {
+  display: flex;
+}
 
 .footer-contacts {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-footer {
@@ -380,6 +511,62 @@ a {
 
 .item-footer {
   margin-bottom: 9px;
+}
+
+.join-us {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-accent);
+  /* padding-top: 72px; */
+}
+
+.footer-social-media {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 0;
+  align-content: flex-start;
+}
+
+.footer-info {
+  width: 231px;
+  display: inline-block;
+}
+
+.social-media-f {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons-f:nth-child(4) {
+  margin-right: 0;
+}
+
+.social-icons-f:hover {
+  background-color: var(--logo-accent);
+  fill: var(--text-accent);
+  border-radius: 50%;
+}
+
+.social-icons-f {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-top: 20px;
+  fill: var(--text-accent);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 /* PAGE - Portfolio */
