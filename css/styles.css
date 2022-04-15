@@ -452,7 +452,6 @@ img {
 
 .logo-footer {
   margin-bottom: 20px;
-  display: inline-block;
 }
 
 .logo-white {
@@ -529,7 +528,6 @@ a {
   display: flex;
   flex-direction: column;
   width: 206px;
-  display: inline-block;
   margin-left: 70px;
   padding-top: 0;
   align-content: flex-start;
@@ -537,7 +535,6 @@ a {
 
 .footer-info {
   width: 231px;
-  display: inline-block;
 }
 
 .social-media-f {
@@ -645,4 +642,13 @@ a {
 .work-list:nth-last-child(-n + 3) {
   margin-right: -30px;
   margin-bottom: -30px;
+}
+
+.information {
+  display: flex;
+  align-items: baseline;
+}
+
+.item:hover {
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
