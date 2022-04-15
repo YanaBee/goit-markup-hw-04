@@ -649,6 +649,6 @@ a {
   align-items: baseline;
 }
 
-.item:hover {
+.work-list .item:hover {
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
