@@ -397,30 +397,33 @@ img {
 .clients {
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
+  fill: currentColor;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
 }
 
 .clients-logo {
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: currentColor;
+  color: #afb1b8;
 }
 
 .clients-logo:nth-child(6n) {
   margin-right: 0;
 }
 
-.clients:hover {
-  fill: var(--logo-accent);
-}
-
-.clients-logo:hover {
+.clients-logo:hover,
+.clients-logo:focus {
   border-color: var(--logo-accent);
+  color: var(--logo-accent);
 }
 
 /* Footer */
