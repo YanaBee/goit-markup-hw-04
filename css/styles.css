@@ -555,13 +555,6 @@ a {
   border-radius: 50%;
 }
 
-.instagram,
-.twitter,
-.facebook,
-.linkedin {
-  fill: var(--text-accent);
-}
-
 /* PAGE - Portfolio */
 
 .nav-button {
